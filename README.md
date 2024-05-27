@@ -80,6 +80,13 @@ CREATE TABLE [dbo].[Veiculo] (
     CONSTRAINT FK_Veiculo_Cor FOREIGN KEY (CorId) REFERENCES Cor(Id)
 );
 
+-- Tabela "TipoUsuario"
+CREATE TABLE TipoUsuario (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    Descricao NVARCHAR(100) NOT NULL,
+    Status BIT NOT NULL
+);
+
 -- Tabela "Usuarios"
 CREATE TABLE Usuario (
     Id INT PRIMARY KEY IDENTITY(1,1),
@@ -87,13 +94,6 @@ CREATE TABLE Usuario (
     Senha NVARCHAR(255) NOT NULL,
     TipoUsuarioId INT NOT NULL,
     FOREIGN KEY (TipoUsuarioId) REFERENCES TipoUsuario(Id)
-);
-
--- Tabela "TipoUsuario"
-CREATE TABLE TipoUsuario (
-    Id INT PRIMARY KEY IDENTITY(1,1),
-    Descricao NVARCHAR(100) NOT NULL,
-    Status BIT NOT NULL
 );
 
 -- Insert's necessário
