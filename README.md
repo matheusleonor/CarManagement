@@ -27,6 +27,9 @@ Este projeto é um sistema de gerenciamento de veículos desenvolvido em ASP.NET
 
 ## Banco De Dados
 
+-- DataBase
+CREATE DATABASE [CarManagement]
+
 -- Tabela de Combustíveis
 CREATE TABLE Combustivel (
     Id INT PRIMARY KEY IDENTITY,
