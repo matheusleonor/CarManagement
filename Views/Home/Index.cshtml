@@ -1,0 +1,84 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <div class="jumbotron mt-4">
+        <h1 class="display-4">Bem-vindo ao CarManagement</h1>
+        <p class="lead">Seu sistema de gerenciamento de veículos completo e fácil de usar.</p>
+        <hr class="my-4">
+        @if (ViewBag.UsuarioEmail == null)
+        {
+            <p>Aqui você pode visualizar e gerenciar veículos, combustíveis, cores, marcas e modelos de forma intuitiva e eficiente.</p>
+            <a class="btn btn-primary btn-lg" href="/Veiculo/Index" role="button">Veja os Veículos</a>
+        }
+        else if (ViewBag.TipoUsuarioId == 1) // Funcionário
+        {
+            <p>Bem-vindo de volta! Gerencie combustíveis, cores, marcas, modelos e veículos de forma intuitiva e eficiente.</p>
+            <a class="btn btn-primary btn-lg" href="/Veiculo/Index" role="button">Gerenciar Veículos</a>
+        }
+        else if (ViewBag.TipoUsuarioId == 2) // Cliente
+        {
+            <p>Bem-vindo de volta! Veja os veículos disponíveis no nosso sistema.</p>
+            <a class="btn btn-primary btn-lg" href="/Veiculo/Index" role="button">Veja os Veículos</a>
+        }
+    </div>
+
+    @if (ViewBag.UsuarioEmail != null && ViewBag.TipoUsuarioId == 1) // Apenas para funcionários
+    {
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="~/images/combustivel.jpg" class="card-img-top" alt="Combustível">
+                    <div class="card-body">
+                        <h5 class="card-title">Combustíveis</h5>
+                        <p class="card-text">Gerencie diferentes tipos de combustíveis para seus veículos.</p>
+                        <a href="/Combustivel/Index" class="btn btn-primary">Gerenciar Combustíveis</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="~/images/cor.jpg" class="card-img-top" alt="Cor">
+                    <div class="card-body">
+                        <h5 class="card-title">Cores</h5>
+                        <p class="card-text">Adicione e edite as cores para os veículos cadastrados.</p>
+                        <a href="/Cor/Index" class="btn btn-primary">Gerenciar Cores</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="~/images/marca.jpg" class="card-img-top" alt="Marca">
+                    <div class="card-body">
+                        <h5 class="card-title">Marcas</h5>
+                        <p class="card-text">Mantenha um registro atualizado das marcas dos veículos.</p>
+                        <a href="/Marca/Index" class="btn btn-primary">Gerenciar Marcas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-4 offset-md-2">
+                <div class="card">
+                    <img src="~/images/modelo.jpg" class="card-img-top" alt="Modelo">
+                    <div class="card-body">
+                        <h5 class="card-title">Modelos</h5>
+                        <p class="card-text">Gerencie os diferentes modelos de veículos disponíveis.</p>
+                        <a href="/Modelo/Index" class="btn btn-primary">Gerenciar Modelos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="~/images/veiculo.jpg" class="card-img-top" alt="Veículo">
+                    <div class="card-body">
+                        <h5 class="card-title">Veículos</h5>
+                        <p class="card-text">Acompanhe e gerencie todos os veículos cadastrados no sistema.</p>
+                        <a href="/Veiculo/Index" class="btn btn-primary">Gerenciar Veículos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

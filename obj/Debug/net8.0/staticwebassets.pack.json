@@ -1,0 +1,413 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\CarManagement.bundle.scp.css",
+      "PackagePath": "staticwebassets\\CarManagement.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\images\\combustivel.jpg",
+      "PackagePath": "staticwebassets\\images\\combustivel.jpg"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\images\\cor.jpg",
+      "PackagePath": "staticwebassets\\images\\cor.jpg"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\images\\marca.jpg",
+      "PackagePath": "staticwebassets\\images\\marca.jpg"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\images\\modelo.jpg",
+      "PackagePath": "staticwebassets\\images\\modelo.jpg"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\images\\veiculo.jpg",
+      "PackagePath": "staticwebassets\\images\\veiculo.jpg"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\uploads\\0cfcea35-361b-4166-8462-5642c258e427_modelo.jpg",
+      "PackagePath": "staticwebassets\\uploads\\0cfcea35-361b-4166-8462-5642c258e427_modelo.jpg"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\uploads\\142f941c-2d04-405e-9417-4fbac6131f4f_modelo.jpg",
+      "PackagePath": "staticwebassets\\uploads\\142f941c-2d04-405e-9417-4fbac6131f4f_modelo.jpg"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\uploads\\147d8ba8-e309-42cf-a252-f8bb67f9aff2_modelo.jpg",
+      "PackagePath": "staticwebassets\\uploads\\147d8ba8-e309-42cf-a252-f8bb67f9aff2_modelo.jpg"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\uploads\\47e89022-07dd-463a-a93e-ef1ff863974d_marca.jpg",
+      "PackagePath": "staticwebassets\\uploads\\47e89022-07dd-463a-a93e-ef1ff863974d_marca.jpg"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\uploads\\4fa0a774-0679-40fa-8167-cf24b86e2e54_modelo.jpg",
+      "PackagePath": "staticwebassets\\uploads\\4fa0a774-0679-40fa-8167-cf24b86e2e54_modelo.jpg"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\uploads\\50c3bde4-5363-41a2-9fc3-93bba405970c_combustivel.jpg",
+      "PackagePath": "staticwebassets\\uploads\\50c3bde4-5363-41a2-9fc3-93bba405970c_combustivel.jpg"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\uploads\\511db360-9afe-4169-a525-f49b96e006ea_modelo.jpg",
+      "PackagePath": "staticwebassets\\uploads\\511db360-9afe-4169-a525-f49b96e006ea_modelo.jpg"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\uploads\\580df1c8-d6fe-47c2-a26b-c439fba435c6_file.png",
+      "PackagePath": "staticwebassets\\uploads\\580df1c8-d6fe-47c2-a26b-c439fba435c6_file.png"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\uploads\\58d8f01f-ec6d-43f6-a866-a2882e16620f_94c336c4-c954-417d-9fd5-17c0b7c01465.jpg",
+      "PackagePath": "staticwebassets\\uploads\\58d8f01f-ec6d-43f6-a866-a2882e16620f_94c336c4-c954-417d-9fd5-17c0b7c01465.jpg"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\uploads\\5a0ed206-6ac0-4413-940e-8b52ca25fc00_modelo.jpg",
+      "PackagePath": "staticwebassets\\uploads\\5a0ed206-6ac0-4413-940e-8b52ca25fc00_modelo.jpg"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\uploads\\5f560cc8-f324-47f0-be4c-826bf215d6b9_modelo.jpg",
+      "PackagePath": "staticwebassets\\uploads\\5f560cc8-f324-47f0-be4c-826bf215d6b9_modelo.jpg"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\uploads\\6590e8df-a66b-4301-8898-48d8772a1f64_file.png",
+      "PackagePath": "staticwebassets\\uploads\\6590e8df-a66b-4301-8898-48d8772a1f64_file.png"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\uploads\\6a5a21a6-ac6c-4e04-9315-8a5cb214bdcf_marca.jpg",
+      "PackagePath": "staticwebassets\\uploads\\6a5a21a6-ac6c-4e04-9315-8a5cb214bdcf_marca.jpg"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\uploads\\738ec34a-13f2-4f04-9320-2902db906641_marca.jpg",
+      "PackagePath": "staticwebassets\\uploads\\738ec34a-13f2-4f04-9320-2902db906641_marca.jpg"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\uploads\\7635a017-c360-40b6-9104-8a267810d84a_cor.jpg",
+      "PackagePath": "staticwebassets\\uploads\\7635a017-c360-40b6-9104-8a267810d84a_cor.jpg"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\uploads\\78d94005-0d15-49ce-98f0-638e73ab3fcc_combustivel.jpg",
+      "PackagePath": "staticwebassets\\uploads\\78d94005-0d15-49ce-98f0-638e73ab3fcc_combustivel.jpg"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\uploads\\98e85876-ab47-4ac7-bcce-fd8c19e60392_combustivel.jpg",
+      "PackagePath": "staticwebassets\\uploads\\98e85876-ab47-4ac7-bcce-fd8c19e60392_combustivel.jpg"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\uploads\\9f822807-bf5f-4731-9893-18e72c1bcc58_modelo.jpg",
+      "PackagePath": "staticwebassets\\uploads\\9f822807-bf5f-4731-9893-18e72c1bcc58_modelo.jpg"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\uploads\\a1a17dbc-3461-4543-b19f-902c055e9d00_combustivel.jpg",
+      "PackagePath": "staticwebassets\\uploads\\a1a17dbc-3461-4543-b19f-902c055e9d00_combustivel.jpg"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\uploads\\a4344852-30ca-4d7f-b408-371525f3d702_file (2).png",
+      "PackagePath": "staticwebassets\\uploads\\a4344852-30ca-4d7f-b408-371525f3d702_file (2).png"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\uploads\\a89a78aa-2e21-47e6-b1c6-2f02260a0f23_veiculos.jpg",
+      "PackagePath": "staticwebassets\\uploads\\a89a78aa-2e21-47e6-b1c6-2f02260a0f23_veiculos.jpg"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\uploads\\a9435039-f649-4d94-8e45-9c008d817cb0_combustivel.jpg",
+      "PackagePath": "staticwebassets\\uploads\\a9435039-f649-4d94-8e45-9c008d817cb0_combustivel.jpg"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\uploads\\b93ef72c-09f0-4fe5-9b53-6e2d168fdf78_combustivel.jpg",
+      "PackagePath": "staticwebassets\\uploads\\b93ef72c-09f0-4fe5-9b53-6e2d168fdf78_combustivel.jpg"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\uploads\\bc71e442-4d6d-4f1c-8474-99e352faa8dd_combustivel.jpg",
+      "PackagePath": "staticwebassets\\uploads\\bc71e442-4d6d-4f1c-8474-99e352faa8dd_combustivel.jpg"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\uploads\\bd7641d5-1087-4cb1-97dd-66dd91850728_combustivel.jpg",
+      "PackagePath": "staticwebassets\\uploads\\bd7641d5-1087-4cb1-97dd-66dd91850728_combustivel.jpg"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\uploads\\c736c30f-413b-42ec-b3d7-4314047ee985_modelo.jpg",
+      "PackagePath": "staticwebassets\\uploads\\c736c30f-413b-42ec-b3d7-4314047ee985_modelo.jpg"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\uploads\\d3d0e231-a5a1-4d94-8697-faf2fa8f6438_veiculos.jpg",
+      "PackagePath": "staticwebassets\\uploads\\d3d0e231-a5a1-4d94-8697-faf2fa8f6438_veiculos.jpg"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\uploads\\e4b43a72-b685-407f-b6f5-91b9c0aa2a2d_modelo.jpg",
+      "PackagePath": "staticwebassets\\uploads\\e4b43a72-b685-407f-b6f5-91b9c0aa2a2d_modelo.jpg"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\uploads\\e5e0459c-68e0-4af4-956e-285a5f67d402_94c336c4-c954-417d-9fd5-17c0b7c01465.jpg",
+      "PackagePath": "staticwebassets\\uploads\\e5e0459c-68e0-4af4-956e-285a5f67d402_94c336c4-c954-417d-9fd5-17c0b7c01465.jpg"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\uploads\\ebcb34ab-1a40-4fd1-b703-1fd0107a2e69_marca.jpg",
+      "PackagePath": "staticwebassets\\uploads\\ebcb34ab-1a40-4fd1-b703-1fd0107a2e69_marca.jpg"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\uploads\\ee67318c-7075-4ddc-9369-c047213a710a_modelo.jpg",
+      "PackagePath": "staticwebassets\\uploads\\ee67318c-7075-4ddc-9369-c047213a710a_modelo.jpg"
+    },
+    {
+      "Id": "D:\\Projetos Visual Studio\\CarManagement\\wwwroot\\uploads\\fd14e23d-af9e-448d-9d5d-4d5987f3d46b_marca.jpg",
+      "PackagePath": "staticwebassets\\uploads\\fd14e23d-af9e-448d-9d5d-4d5987f3d46b_marca.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CarManagement.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.CarManagement.props",
+      "PackagePath": "build\\CarManagement.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.CarManagement.props",
+      "PackagePath": "buildMultiTargeting\\CarManagement.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.CarManagement.props",
+      "PackagePath": "buildTransitive\\CarManagement.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

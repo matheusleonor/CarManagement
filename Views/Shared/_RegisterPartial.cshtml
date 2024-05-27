@@ -1,0 +1,38 @@
+﻿@model CarManagement.Models.Usuario
+
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="registerModalLabel">Registrar</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-danger" id="registerError" style="display:none;"></div>
+                @using (Html.BeginForm("Register", "Usuario", FormMethod.Post))
+                {
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Email)
+                        @Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Senha)
+                        @Html.PasswordFor(model => model.Senha, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        <label for="ConfirmarSenha">Confirmar Senha</label>
+                        <input type="password" class="form-control" id="ConfirmarSenha" name="ConfirmarSenha" />
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.TipoUsuarioId, "Tipo de Usuário")
+                        @Html.DropDownListFor(model => model.TipoUsuarioId, new SelectList(ViewBag.TipoUsuarios as List<TipoUsuario>, "Id", "Descricao"), "Selecione o Tipo de Usuário", new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Registrar" class="btn btn-primary" />
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

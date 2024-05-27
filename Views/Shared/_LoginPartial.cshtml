@@ -1,0 +1,33 @@
+﻿@model CarManagement.Models.Usuario
+
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                @if (TempData["LoginError"] != null)
+                {
+                    <div class="alert alert-danger" id="loginError">@TempData["LoginError"]</div>
+                }
+                @using (Html.BeginForm("Login", "Usuario", FormMethod.Post, new { id = "loginForm" }))
+                {
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Email)
+                        @Html.TextBoxFor(model => model.Email, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.Senha)
+                        @Html.PasswordFor(model => model.Senha, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Login" class="btn btn-primary" />
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

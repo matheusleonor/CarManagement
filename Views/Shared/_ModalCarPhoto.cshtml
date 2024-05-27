@@ -1,0 +1,29 @@
+﻿@model CarManagement.Models.Veiculo
+
+<!-- Modal -->
+<div class="modal fade" id="fotosModal-@Model.Id" tabindex="-1" role="dialog" aria-labelledby="fotosModalLabel-@Model.Id" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="fotosModalLabel-@Model.Id">Fotos do Veículo @Model.Placa</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                @if (Model.Fotos != null && Model.Fotos.Any())
+                {
+                    <div class="row">
+                        @foreach (var foto in Model.Fotos)
+                        {
+                            <div class="col-md-4">
+                                <img src="@foto" alt="Foto do Veículo" class="img-fluid mb-2" />
+                            </div>
+                        }
+                    </div>
+                }
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>

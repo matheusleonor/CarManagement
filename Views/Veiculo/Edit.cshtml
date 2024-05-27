@@ -1,0 +1,210 @@
+﻿@model CarManagement.Models.Veiculo
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Veículo</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Placa, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Placa, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Placa, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Renavam, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Renavam, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Renavam, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.NumeroChassi, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.NumeroChassi, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.NumeroChassi, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.NumeroMotor, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.NumeroMotor, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.NumeroMotor, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.AnoFabricacao, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.AnoFabricacao, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.AnoFabricacao, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Status, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.Status, new List<SelectListItem>
+            {
+            new SelectListItem { Text = "Ativo", Value = "true" },
+            new SelectListItem { Text = "Inativo", Value = "false" }
+            }, "Selecione o Status", new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Status, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.MarcaId, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.MarcaId, new SelectList(ViewBag.Marcas, "Id", "Nome"), "Selecione a Marca", new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.MarcaId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ModeloId, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.ModeloId, new SelectList(ViewBag.Modelos, "Id", "Nome"), "Selecione o Modelo", new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.ModeloId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CombustivelId, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.CombustivelId, new SelectList(ViewBag.Combustiveis, "Id", "Descricao"), "Selecione o Combustível", new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.CombustivelId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CorId, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.CorId, new SelectList(ViewBag.Cores, "Id", "Descricao"), "Selecione a Cor", new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.CorId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Fotos", "Fotos", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <input type="file" name="Fotos" id="Fotos" multiple onchange="previewImages(event)" />
+                @Html.ValidationMessage("Fotos", "", new { @class = "text-danger" })
+                <div id="previewContainer" style="margin-top: 10px;"></div>
+                <div id="existingPhotos" style="margin-top: 10px;">
+                    @foreach (var foto in Model.Fotos)
+                    {
+                        <div style="position: relative; display: inline-block; margin-right: 10px;">
+                            <img src="@foto" style="width: 150px; height: auto;" />
+                            <button type="button" style="position: absolute; top: 0; right: 0; background-color: red; color: white; border: none; border-radius: 50%; width: 25px; height: 25px; cursor: pointer;" onclick="removeExistingPhoto(this, '@foto')">&times;</button>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script>
+        let selectedFiles = [];
+        let removedPhotos = [];
+
+        function previewImages(event) {
+            const files = event.target.files;
+            const previewContainer = document.getElementById('previewContainer');
+            previewContainer.innerHTML = '';
+
+            for (let i = 0; i < files.length; i++) {
+                selectedFiles.push(files[i]);
+            }
+
+            selectedFiles.forEach((file, index) => {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    const imgDiv = document.createElement('div');
+                    imgDiv.style.position = 'relative';
+                    imgDiv.style.display = 'inline-block';
+                    imgDiv.style.marginRight = '10px';
+
+                    const img = document.createElement('img');
+                    img.src = e.target.result;
+                    img.style.width = '150px';
+                    img.style.height = 'auto';
+
+                    const removeButton = document.createElement('button');
+                    removeButton.innerHTML = '&times;';
+                    removeButton.style.position = 'absolute';
+                    removeButton.style.top = '0';
+                    removeButton.style.right = '0';
+                    removeButton.style.backgroundColor = 'red';
+                    removeButton.style.color = 'white';
+                    removeButton.style.border = 'none';
+                    removeButton.style.borderRadius = '50%';
+                    removeButton.style.width = '25px';
+                    removeButton.style.height = '25px';
+                    removeButton.style.cursor = 'pointer';
+                    removeButton.onclick = function () {
+                        selectedFiles.splice(index, 1);
+                        imgDiv.remove();
+                    };
+
+                    imgDiv.appendChild(img);
+                    imgDiv.appendChild(removeButton);
+                    previewContainer.appendChild(imgDiv);
+                };
+                reader.readAsDataURL(file);
+            });
+        }
+
+        document.querySelector('form').addEventListener('submit', function (event) {
+            const dataTransfer = new DataTransfer();
+            selectedFiles.forEach(file => dataTransfer.items.add(file));
+            document.getElementById('Fotos').files = dataTransfer.files;
+
+            // Add removed photos to the form submission
+            const removedPhotosInput = document.createElement('input');
+            removedPhotosInput.type = 'hidden';
+            removedPhotosInput.name = 'RemovedPhotos';
+            removedPhotosInput.value = JSON.stringify(removedPhotos);
+            this.appendChild(removedPhotosInput);
+        });
+
+        function removeExistingPhoto(button, photoUrl) {
+            // Add to removedPhotos array
+            removedPhotos.push(photoUrl);
+
+            // Remove the visual element
+            const photoElement = button.closest('div');
+            photoElement.remove();
+        }
+    </script>
+}

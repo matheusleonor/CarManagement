@@ -1,0 +1,150 @@
+﻿@model IEnumerable<CarManagement.Models.Veiculo>
+
+@{
+    ViewBag.Title = "Veículo";
+}
+
+<h2>Veículo</h2>
+
+<form method="get">
+    <div class="form-row align-items-end">
+        <div class="form-group col-md-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="filterField">Filtrar por</label>
+                    <select class="form-control" id="filterField" name="filterField" onchange="updateFilterField()">
+                        <!option value="placa" @(ViewBag.FilterField == "placa" ? "selected" : "")>Placa</!option>
+                        <!option value="modelo" @(ViewBag.FilterField == "modelo" ? "selected" : "")>Modelo</!option>
+                        <!option value="marca" @(ViewBag.FilterField == "marca" ? "selected" : "")>Marca</!option>
+                        <!option value="cor" @(ViewBag.FilterField == "cor" ? "selected" : "")>Cor</!option>
+                        <!option value="combustivel" @(ViewBag.FilterField == "combustivel" ? "selected" : "")>Combustível</!option>
+                        <!option value="status" @(ViewBag.FilterField == "status" ? "selected" : "")>Status</!option>
+                    </select>
+                </div>
+                <div class="col-md-6" id="textInputGroup" @(ViewBag.FilterField == "status" ? "style='display:none;'" : "")>
+                    <label for="filterValue">Valor</label>
+                    <input type="text" class="form-control" id="filterValue" name="filterValue" value="@ViewBag.FilterValue" />
+                </div>
+                <div class="col-md-6" id="statusDropdownGroup" @(ViewBag.FilterField == "status" ? "" : "style='display:none;'")>
+                    <label for="filterStatus">Status</label>
+                    <select class="form-control" id="filterStatus" name="filterValue">
+                        <option value="">Selecione o status</option>
+                        <!option value="true" @(ViewBag.FilterValue == "true" ? "selected" : "")>Ativo</!option>
+                        <!option value="false" @(ViewBag.FilterValue == "false" ? "selected" : "")>Inativo</!option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="form-group col-md-3">
+            <button type="submit" class="btn btn-primary">Filtrar</button>
+            <a href="/Veiculo/Index" class="btn btn-secondary">Limpar Filtro</a>
+        </div>
+    </div>
+</form>
+
+@if (ViewBag.TipoUsuarioId == 1)
+{
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Placa)
+            </th>
+            <th>
+                Modelo
+            </th>
+            <th>
+                Marca
+            </th>
+            <th>
+                Cor
+            </th>
+            <th>
+                Combustivel
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th>
+                Foto
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Placa)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Modelo.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Marca.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cor.Descricao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Combustivel.Descricao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+                <td>
+                    @if (item.Fotos != null && item.Fotos.Any())
+                    {
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#fotosModal-@item.Id">
+                            Ver Fotos
+                        </button>
+                    }
+                    @Html.Partial("_ModalCarPhoto", item)
+                </td>
+                <td>
+                    @Html.ActionLink("Details", "Details", new { id = item.Id })
+                    @if (ViewBag.TipoUsuarioId == 1)
+                    {
+                        @: | @Html.ActionLink("Edit", "Edit", new { id = item.Id })
+                        @: | @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts {
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript">
+        function updateFilterField() {
+            var filterField = document.getElementById("filterField").value;
+            var textInputGroup = document.getElementById("textInputGroup");
+            var statusDropdownGroup = document.getElementById("statusDropdownGroup");
+
+            if (filterField === "status") {
+                textInputGroup.style.display = 'none';
+                statusDropdownGroup.style.display = 'block';
+                textInputGroup.querySelector('input').name = '';
+                statusDropdownGroup.querySelector('select').name = 'filterValue';
+            } else {
+                textInputGroup.style.display = 'block';
+                statusDropdownGroup.style.display = 'none';
+                textInputGroup.querySelector('input').name = 'filterValue';
+                statusDropdownGroup.querySelector('select').name = '';
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            updateFilterField(); // Ensure the correct fields are shown on page load
+        });
+    </script>
+}
